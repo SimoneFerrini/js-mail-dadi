@@ -59,5 +59,22 @@ btnConfirmEL.addEventListener("click", function() {
 
 /*sezione Dadi----------------------------*/
 
+let btnLanciaDadiEL = document.getElementById("btn-dadi");
 
+
+btnLanciaDadiEL.addEventListener("click", function(){
+    let tiro1 = Math.floor((Math.random() * 6) + 1);
+    let tiro2 = Math.floor((Math.random() * 6) + 1);
+
+    console.log(tiro1);
+    console.log(tiro2);
+
+    if (tiro1 < tiro2){
+        document.getElementById("dadi-result").innerHTML = "Hai perso...";
+    } else if (tiro1 > tiro2) {
+        document.getElementById("dadi-result").innerHTML = "Hai vinto!!!";
+    } else {
+        document.getElementById("dadi-result").innerHTML = "Un triste pareggio.";
+    }
+})
 
