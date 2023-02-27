@@ -60,7 +60,8 @@ btnConfirmEL.addEventListener("click", function() {
 /*sezione Dadi----------------------------*/
 
 let btnLanciaDadiEL = document.getElementById("btn-dadi");
-
+let facceDadiImg = ["img/dice1.png", "img/dice2.png", "img/dice3.png",
+                    "img/dice4.png", "img/dice5.png", "img/dice6.png"];
 
 btnLanciaDadiEL.addEventListener("click", function(){
     let tiro1 = Math.floor((Math.random() * 6) + 1);
@@ -68,6 +69,16 @@ btnLanciaDadiEL.addEventListener("click", function(){
 
     console.log(tiro1);
     console.log(tiro2);
+
+    for(let i=1; i<=6; i++){
+        if (i == tiro1){
+            document.getElementById("img-tiro1").src = facceDadiImg[i-1];
+        }
+
+        if (i == tiro2){
+            document.getElementById("img-tiro2").src = facceDadiImg[i-1];
+        }
+    }
 
     if (tiro1 < tiro2){
         document.getElementById("dadi-result").innerHTML = "Hai perso...";
@@ -78,3 +89,4 @@ btnLanciaDadiEL.addEventListener("click", function(){
     }
 })
 
+/*fine sezione dadi----------------------------------------------*/
