@@ -80,12 +80,22 @@ btnLanciaDadiEL.addEventListener("click", function(){
         }
     }
 
+    document.getElementById("dadi-display1").style.display = "flex";
+    document.getElementById("dadi-display2").style.display = "flex";
+    
     if (tiro1 < tiro2){
+
         document.getElementById("dadi-result").innerHTML = "Hai perso...";
+        document.getElementById("dadi-result").style.backgroundColor = "rgb(176, 12, 0)"
+
     } else if (tiro1 > tiro2) {
+
         document.getElementById("dadi-result").innerHTML = "Hai vinto!!!";
+        document.getElementById("dadi-result").style.backgroundColor = "rgb(115, 207, 99)"
     } else {
+
         document.getElementById("dadi-result").innerHTML = "Un triste pareggio.";
+        document.getElementById("dadi-result").style.backgroundColor = "rgb(237, 174, 0)"
     }
 })
 
