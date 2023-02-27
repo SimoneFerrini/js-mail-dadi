@@ -44,7 +44,13 @@ btnConfirmEL.addEventListener("click", function() {
         console.log(access);
 
         if (access == true){
-            
+            document.getElementById("mail-result").innerHTML = "Accesso Effettuato, Benvenuto";
+            document.getElementById("mail-result").style.color = "white";
+            document.getElementById("mail-result").style.backgroundColor = "rgb(40, 102, 52)";
+        } else {
+            document.getElementById("mail-result").innerHTML = " !!! Accesso Negato !!! ";
+            document.getElementById("mail-result").style.color = "white";
+            document.getElementById("mail-result").style.backgroundColor = "rgb(135, 34, 0)";
         }
 
     }
