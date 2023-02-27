@@ -21,3 +21,33 @@ Consigli del giorno:
     svolgere al nostro programma così come lo faremmo "a mano"
 
 */
+
+/*mail*/
+let adminList = ["simone.ferrini@boolean.com", "gabriel.spanu@boolean.com", "davide.voza@boolean.com", "andrea.bellucci@boolean.com"];
+
+let btnConfirmEL = document.getElementById("btn-confirm");
+
+let access = false;
+
+btnConfirmEL.addEventListener("click", function() {
+        let userMail = document.getElementById("user-mail").value;
+
+        access = false;
+
+        for (i=0; i<adminList.length; i++){
+
+            if (userMail == adminList[i]){
+                access = true;
+            }
+        }
+        console.log(userMail);
+        console.log(access);
+
+        if (access == true){
+            
+        }
+
+    }
+
+    
+)
