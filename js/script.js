@@ -52,8 +52,12 @@ btnConfirmEL.addEventListener("click", function() {
             document.getElementById("mail-result").style.color = "white";
             document.getElementById("mail-result").style.backgroundColor = "rgb(135, 34, 0)";
         }
-
     }
+    )
+/*fine sezione mail------------------------*/
 
-    
-)
+
+/*sezione Dadi----------------------------*/
+
+
+
