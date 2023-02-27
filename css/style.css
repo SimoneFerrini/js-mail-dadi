@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+.my-mail-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin: 1em;
+    background-color: rgb(124, 181, 238);
+    border-radius: 30px;
+
+}
+
+
+.my-inner-mail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.my-bold{
+    font-size: 1.5em;
+    font-weight: bold;
+}

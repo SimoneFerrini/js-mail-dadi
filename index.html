@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Mail Dadi</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div>
-        <div>
-            <span>Inserisci la tua email</span>
-            <input type="text" id="user-mail" placeholder="nome.cognome@boolean.com">
-            <button id="btn-confirm">Confirm</button>
+    <div class="my-mail-container">
+        <div class="my-inner-mail-container">
+            <span class="my-bold">Inserisci la tua email</span>
+            
+            <div>
+                <input type="text" id="user-mail" placeholder="nome.cognome@boolean.com">
+            </div>
+            <div>
+                <button id="btn-confirm">Confirm</button>
+            </div>
         </div>
-        <span id="mail-result"></span>
+        <div>
+            <span id="mail-result"></span>
+        </div>
     </div>
 
 
